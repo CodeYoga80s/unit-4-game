@@ -1,0 +1,90 @@
+.header{
+    position: relative;
+    background-color: rgb(201, 113, 14);
+    padding: 5px;
+    width: 250px;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .instructions{
+    position: relative;
+    background-color: rgb(231, 225, 144);
+    padding: 5px;
+    width: 375px;
+    margin: 5px;
+    color: green;
+    font-weight: bold;
+  }
+
+
+  .floatLeft{
+    padding: 5px;
+    width: 300px;
+    margin: 5px;
+  }
+
+
+  .targetScore{
+    float: left;
+    position: relative;
+    background-color: rgb(41, 119, 51);
+    padding: 5px;
+    width: 200px;
+    color: rgb(13, 14, 13);
+    margin: 5px;
+    font-weight: bold;
+  }
+
+  .winsAndLosses{
+    position: relative;
+    float: left;
+    background-color: rgb(19, 223, 212);
+    position: relative;
+    width: 75px;
+    color:rgb(13, 14, 13);
+    margin: 5px;
+    text-align: center;
+
+
+  }
+ 
+  .gems{
+    clear: both;
+    position: relative;
+    float: left;
+    position: relative;
+    padding: 5px;
+    width: 500px;
+    color: white;
+
+    font-weight: bold;
+  }
+
+
+  .userTotal1{
+    clear: both;
+    position: relative;
+    float: left;
+    background-color: rgb(36, 139, 114);
+    position: relative;
+    width: 300px;
+    color: white;
+
+  }
+
+  .userTotal{
+    text-align: center;
+    clear: both;
+    float: left;
+    background-color: rgb(36, 139, 114);
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    color: white;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 50px;
+  }
