@@ -1,10 +1,15 @@
 $( document ).ready(function() {
 
-var blueVal = Math.floor((Math.random() * 12) + 1);
-var greenVal = Math.floor((Math.random() * 12) + 1);
-var redVal = Math.floor((Math.random() * 12) + 1);
-var yellowVal = Math.floor((Math.random() * 12) + 1);
-var compScore = Math.floor((Math.random() * 120) + 19);
+//random number generator//
+var randNumber = function(min, max){
+    return Math.floor(Math.random() * (max-min+1)) + min;
+}
+
+var blueVal = randNumber(1, 12);
+var greenVal = randNumber(1, 12);
+var redVal = randNumber(1, 12);
+var yellowVal = randNumber(1, 12);
+var compScore = randNumber(19, 120);
 var score = 0;
 var wins = 0;
 var losses = 0;
@@ -13,9 +18,7 @@ $("#numberWins").text(wins);
 $("#numberLosses").text(losses);
 
 
-
     var blue = $("#blue1").on("click", function() {
-        // scoreArray.push(blueVal);
         // console.log(blueVal);
         funFunction(blueVal);
     })
@@ -38,11 +41,11 @@ $("#numberLosses").text(losses);
 
 
 function reset() {
-    compScore = Math.floor((Math.random() * 120) + 19);
-    blueVal = Math.floor((Math.random() * 12) + 1);
-    greenVal = Math.floor((Math.random() * 12) + 1);
-    redVal = Math.floor((Math.random() * 12) + 1);
-    yellowVal = Math.floor((Math.random() * 12) + 1);
+    compScore = randNumber(19, 120);
+    blueVal = randNumber(1, 12);
+    greenVal = randNumber(1, 12);
+    redVal = randNumber(1, 12);
+    yellowVal = randNumber(1, 12);
     score = 0;
     $("#finalTotal").text(score);
     $("#randomNumber").text(compScore);
@@ -78,16 +81,6 @@ if(score>compScore){
 }
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
